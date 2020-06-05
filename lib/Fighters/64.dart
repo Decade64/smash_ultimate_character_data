@@ -549,9 +549,15 @@ List<Fighter> sixtyFour() {
         ListTile(
           title: Text("Credits to Izaw",textAlign: TextAlign.center,),
         ),
-        IconButton(
-          icon: Icon(Icons.launch, color: Colors.blue,),
-        )
+        Builder(
+            builder: (context){
+              return IconButton(
+                icon: Icon(Icons.launch, color: Colors.blue,),
+                onPressed: (){
+                  openYoutube("youtu.be/zbel6sAHzDM");
+                },
+              );
+            })
       ]),
       //Common mistakes
       FancyContainerCardListView([
@@ -631,17 +637,110 @@ A common error is accidentally misclicking Side B upon firing Eggs. When you wan
             """;
             return ListTile(
               title: IconButton(
-                icon: Icon(Icons.launch,),
+                icon: Icon(Icons.comment,color: Colors.blue,),
                 onPressed: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => textInfoView(Colors.green,egg, Text("Egg Management", style: TextStyle(fontSize: 20),))));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => textInfoView(Colors.green,egg, Text("Egg Management",textAlign: TextAlign.center, style: TextStyle(fontSize: 20),))));
                 },
               ),
             );
           },
         )
       ])
-      
     ],
+  ));
+  sixFour.add(Fighter(
+    name: Text("Kirby"),
+    fighterImage: Image.asset("lib/assets/sixFour/KirbyImage.png"),
+    stockIconImageLocation: "lib/assets/sixFour/KirbyStockImage.png",
+    stockIconGraphOffset: Offset(25,25),
+    barColor: Colors.pink,
+    discordLink: "https://discord.gg/pNdppAu",
+    ultimateFrameDataLink: "https://ultimateframedata.com/kirby.php",
+    tacticsTitle: "Flexible",
+    tacticsBody: """
+Due to the nature of Kirby's copy abilities and low profiling being more effective against some characters than others, Kirby can change and adapt his playstyle to suit different matchups. He generally prefers to play grounded and close to his opponent to abuse his great frame data on his normals. However in some matchups, often with the use of copy abilities, he can play as a zoner as well. In matchups where low profiling is very effective, Kirby will want to play rushdown and use a lot of down tilts. 
+    """,
+    additionalWidgets: [
+      FancyContainerCardListView([
+        ListTile(title: Text("Kirby guide, by Skillody", textAlign: TextAlign.center, style: TextStyle(fontSize: 20),),),
+        IconButton(icon: Icon(Icons.launch,color: Colors.blue,),
+        onPressed: (){
+          openYoutube("youtu.be/vf0TEtwAhwQ");
+        },)
+      ]),
+      FancyContainerCardListView([
+        ListTile(title: Text("Kirby Matchup Chart\nTap to enlarge",textAlign: TextAlign.center, style: TextStyle(fontSize: 20),),),
+        Builder(
+          builder: (context) {
+            return ListTile(
+              title: Hero(
+                  tag: "kirbytMatchup",
+                  child: Image.asset(
+                      "lib/assets/sixFour/Kirby Matchup Chart.jpg")),
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) =>
+                            pictureInfographicViewer(
+                                AssetImage(
+                                    "lib/assets/sixFour/Kirby Matchup Chart.jpg"),
+                                "kirbyMatchup")));
+              },
+            );
+          },
+        )
+      ]),
+      FancyContainerCardListView([
+        ListTile(title: Text("Common Mistakes\nBy IBZ",textAlign: TextAlign.center, style: TextStyle(fontSize: 20),),),
+        Builder(
+          builder: (context){
+            String mistakes = """
+- Jumping a lot. Kirby is a ground fighter. His ground speed is pretty good and his frame data on his tilts are great. His airspeed however, is very bad. So jumping a lot in neutral will leave you vulnerable and easy to hit.
+
+- Using d-air. This is a very common habit among less experienced players. D-air has some of the worst frame data and reward on hit out of any aerial in the game. Despite this, many low level kirbys spam it in neutral and disadvantage. Kirby players should know that d-air is usually only good for edgeguarding and within combos. 
+
+- Playing aggressively. Kirby might have some safe pokes, but his moves aren't safe enough for him to just run in and mash on his opponent. Also, approaching characters with long range is quite difficult for Kirby, so it's usually best for him to bait an approach from his opponent instead.
+
+- Not snapping to the ledge properly with final cutter (up special). FC can snap to the ledge on the way up without going above the ledge if spaced correctly. This protects Kirby from counters, water attacks and a lot of smash attacks that would usually trade. Many Kirbys don't know how to space FC and leave themselves more vulnerable than they should be. The video below shows how to snap to the ledge properly with FC
+          """;
+            return ListTile(
+              title: Icon(Icons.comment,color: Colors.blue,),
+              onTap: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context) => textInfoView(Colors.pink, mistakes, Text("Common Mistakes",textAlign: TextAlign.center,style: TextStyle(fontSize: 20),))));
+              },
+            );
+          },
+        )
+      ])
+    ],
+    contributors: [
+      //IBZ
+      CreditedContributor(
+        contributor: "IBZ",
+        contribution: "Playstyle Paragraph/Graph \nCommon Mistakes",
+        plugsAndLinks: {
+          "Twitter": "https://twitter.com/IBZ_SSB",
+          "YouTube": "https://www.youtube.com/channel/UCQNS04WkKo6_n-4aTONyX9w"
+        }
+      ),
+      CreditedContributor(
+        contributor: "Sillody",
+        contribution: "Kirby YouTube guide",
+        plugsAndLinks: {
+          "Twitter": "https://twitter.com/Sillody",
+          "YouTube": "https://www.youtube.com/channel/UCFxFjgJpsbu4yX0kj0siNtQ"
+        }
+      ),
+      CreditedContributor(
+        contributor: "SK",
+        contribution: "Kirby Guides",
+        plugsAndLinks: {
+          "YouTube": "https://www.youtube.com/channel/UCtT0PnRVXo0qIi-Tsm-wncQ",
+          "Twitter": "https://twitter.com/DatDereKirby"
+        }
+      )
+    ]
   ));
   return sixFour;
 }
