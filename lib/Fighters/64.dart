@@ -662,6 +662,24 @@ Due to the nature of Kirby's copy abilities and low profiling being more effecti
     """,
     additionalWidgets: [
       FancyContainerCardListView([
+        ListTile(title: Text("Stages",textAlign: TextAlign.center,style: TextStyle(fontSize: 20),),),
+        Builder(
+          builder: (context){
+            return IconButton(icon: Icon(Icons.launch,color: Colors.blue,),
+            onPressed: (){
+              List<StagePreference> stages = [
+                StagePreference(Stage.bf, StageGoodOrBad.bad,"","" ),
+                StagePreference(Stage.ys, StageGoodOrBad.bad, "","" ),
+                StagePreference(Stage.fd, StageGoodOrBad.good, "","" ),
+                StagePreference(Stage.sv, StageGoodOrBad.good, "","" ),
+                StagePreference(Stage.ps2, StageGoodOrBad.neutral, "","" ),
+              ];
+              Navigator.push(context, MaterialPageRoute(builder: (context) => stagesInfoView(Colors.pink, stages)));
+            },);
+          },
+        )
+      ]),
+      FancyContainerCardListView([
         ListTile(title: Text("Kirby guide, by Skillody", textAlign: TextAlign.center, style: TextStyle(fontSize: 20),),),
         IconButton(icon: Icon(Icons.launch,color: Colors.blue,),
         onPressed: (){
@@ -726,7 +744,7 @@ Due to the nature of Kirby's copy abilities and low profiling being more effecti
       ),
       CreditedContributor(
         contributor: "Sillody",
-        contribution: "Kirby YouTube guide",
+        contribution: "Kirby Guides",
         plugsAndLinks: {
           "Twitter": "https://twitter.com/Sillody",
           "YouTube": "https://www.youtube.com/channel/UCFxFjgJpsbu4yX0kj0siNtQ"
