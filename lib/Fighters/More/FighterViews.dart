@@ -187,6 +187,7 @@ class pictureInfographicViewer extends StatelessWidget{
     );
   }
 }
+//Text view
 class textInfoView extends StatelessWidget{
   final Color fighterColor;
   final String message;
@@ -208,7 +209,130 @@ class textInfoView extends StatelessWidget{
       )
     );
   }
+}
+//Stage preference view
+class stagesInfoView extends StatelessWidget{
+  final Color fighterColor;
+  final List<StagePreference> stages;
+  stagesInfoView(this.fighterColor,this.stages);
+  @override
+  Widget build(BuildContext context) {
+    //Stages
+    List<Widget> good = [];
+    List<Widget> bad = [];
+    List<Widget> neutral = [];
 
+    //Organize the stages
+    stages.forEach((stage) {
+      //Good
+      if(stage.goodOrBad == StageGoodOrBad.good){
+        good.add(Card(
+          elevation: 15,
+            child:Padding(
+              padding: const EdgeInsets.only(left: 15,right: 15),
+              child: stageImage(stage.stage),
+            ))
+        );
+      }
+      //Bad
+      if(stage.goodOrBad == StageGoodOrBad.bad){
+        bad.add(Card(
+            elevation: 15,
+            child:Padding(
+              padding: const EdgeInsets.only(left: 15,right: 15),
+              child: stageImage(stage.stage),
+            ))
+        );
+      }
+      //Neutral
+      if(stage.goodOrBad == StageGoodOrBad.neutral){
+        neutral.add(Card(
+            elevation: 15,
+            child:Padding(
+              padding: const EdgeInsets.only(left: 15,right: 15),
+              child: stageImage(stage.stage),
+            ))
+        );
+      }
+    });
+    return Scaffold(
+      appBar: AppBar(backgroundColor: fighterColor,),
+      body: Container(
+        color: fighterColor,
+        child: CustomScrollView(
+          slivers: [
+            SliverToBoxAdapter(
+              child: Padding(
+                padding: const EdgeInsets.all(20),
+                child: Card(
+                elevation: 15,
+                  child: Padding(
+                    padding: const EdgeInsets.all(20),
+                    child: Text("Good",textAlign: TextAlign.center,style: TextStyle(fontSize: 20)),
+                  ),
+                ),
+              ),
+            ),
+            //Good stages
+            SliverToBoxAdapter(
+              child: Container(
+                height: 200,
+                child: ListView(
+                  scrollDirection: Axis.horizontal,
+                  shrinkWrap: true,
+                  children: good,
+                ),
+              ),
+            ),
+            SliverToBoxAdapter(
+              child: Padding(
+                padding: const EdgeInsets.all(20),
+                child: Card(
+                  elevation: 15,
+                  child: Padding(
+                    padding: const EdgeInsets.all(20),
+                    child: Text("Bans",textAlign: TextAlign.center,style: TextStyle(fontSize: 20)),
+                  ),
+                ),
+              ),
+            ),
+            SliverToBoxAdapter(
+              child: Container(
+                height: 200,
+                child: ListView(
+                  scrollDirection: Axis.horizontal,
+                  shrinkWrap: true,
+                  children: bad,
+                ),
+              ),
+            ),
+            SliverToBoxAdapter(
+              child: Padding(
+                padding: const EdgeInsets.all(20),
+                child: Card(
+                  elevation: 15,
+                  child: Padding(
+                    padding: const EdgeInsets.all(20),
+                    child: Text("Neutral",textAlign: TextAlign.center,style: TextStyle(fontSize: 20)),
+                  ),
+                ),
+              ),
+            ),
+            SliverToBoxAdapter(
+              child: Container(
+                height: 200,
+                child: ListView(
+                  scrollDirection: Axis.horizontal,
+                  shrinkWrap: true,
+                  children: neutral,
+                ),
+              ),
+            ),
+          ],
+        )
+      )
+    );
+  }
 }
 
 //Youtube link launcher
@@ -247,3 +371,106 @@ Widget FancyContainerCardListView(List<Widget> children){
     ),
   );
 }
+
+//Stage things
+class StagePreference{
+  Stage stage;
+  StageGoodOrBad goodOrBad;
+  String adv;
+  String dis;
+  StagePreference(this.stage,this.goodOrBad,this.adv,this.dis);
+}
+enum Stage{
+  ps1,
+  ps2,
+  kalos,
+  unova,
+  bf,
+  fd,
+  lylat,
+  tc,
+  sv,
+  ys,
+  yi,
+}
+enum StageGoodOrBad{
+  good,
+  bad,
+  neutral
+}
+String stageString(Stage stage){
+  switch(stage){
+    case Stage.ps1:{
+      return "Pokemon Stadium 1";
+    }
+    case Stage.ps2:{
+      return "Pokemon Stadium 2";
+    }
+    case Stage.kalos:{
+      return "Kalos Pokemon League";
+    }
+    case Stage.unova:{
+      return "Unova";
+    }
+    case Stage.bf:{
+      return "Battlefield";
+    }
+    case Stage.fd:{
+      return "Final Destination";
+    }
+    case Stage.lylat:{
+      return "Lylat Cruise";
+    }
+    case Stage.tc:{
+      return "Town and City";
+    }
+    case Stage.sv:{
+      return "Smashville";
+    }
+    case Stage.ys:{
+      return "Yoshi's Story";
+    }
+    case Stage.yi:{
+      return "Yoshi's Island";
+    }
+  }
+}
+
+Image stageImage(Stage stage){
+  switch(stage){
+    case Stage.ps1:{
+      return Image.asset("lib/assets/stageImages/ps1.jpg",width: 250,height: 250,);
+    }
+    case Stage.ps2:{
+      return Image.asset("lib/assets/stageImages/ps2.jpg",width: 250,height: 250,);
+    }
+    case Stage.kalos:{
+      return Image.asset("lib/assets/stageImages/kalos.jpg",width: 250,height: 250,);
+    }
+    case Stage.unova:{
+      return Image.asset("lib/assets/stageImages/unova.jpg",width: 250,height: 250,);
+    }
+    case Stage.bf:{
+      return Image.asset("lib/assets/stageImages/bf.jpg",width: 250,height: 250,);
+    }
+    case Stage.fd:{
+      return Image.asset("lib/assets/stageImages/fd.jpg",width: 250,height: 250,);
+    }
+    case Stage.lylat:{
+      return Image.asset("lib/assets/stageImages/lylat.jpg",width: 250,height: 250,);
+    }
+    case Stage.tc:{
+      return Image.asset("lib/assets/stageImages/tc.jpg",width: 250,height: 250,);
+    }
+    case Stage.sv:{
+      return Image.asset("lib/assets/stageImages/sv.jpg",width: 250,height: 250,);
+    }
+    case Stage.ys:{
+      return Image.asset("lib/assets/stageImages/ys.jpg",width: 250,height: 250,);
+    }
+    case Stage.yi:{
+      return Image.asset("lib/assets/stageImages/yi.jpg",width: 250,height: 250,);
+    }
+  }
+}
+Widget stageWidget(){}

@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 
 class CreditedContributor {
   //Values
@@ -7,9 +6,9 @@ class CreditedContributor {
   Map<String, String> plugsAndLinks;
 
   CreditedContributor(
-      {@required this.contributor,
-      @required this.contribution,
-      @required this.plugsAndLinks});
+      {this.contributor,
+      this.contribution,
+      this.plugsAndLinks});
 
 
   //Common contributors
