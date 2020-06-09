@@ -14,6 +14,10 @@ extension fighterVeiws on Fighter {
     List<String> linkNames;
     links = [discordLink, ultimateFrameDataLink, 0];
     linkNames = ["Fighter Discord", "Fighter Frame Data", "Credits"];
+    if (discordLink == ""){
+      links.remove(discordLink);
+      linkNames.remove("Fighter Discord");
+    }
     return ListView.builder(
         physics: NeverScrollableScrollPhysics(),
         shrinkWrap: true,
