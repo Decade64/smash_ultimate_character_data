@@ -687,6 +687,13 @@ Due to the nature of Kirby's copy abilities and low profiling being more effecti
         },)
       ]),
       FancyContainerCardListView([
+        ListTile(title: Text("Kirby Guide playlist",textAlign: TextAlign.center, style: TextStyle(fontSize: 20),),),
+        IconButton(icon: Icon(Icons.launch, color: Colors.blue,),
+        onPressed: (){
+          openYoutube("www.youtube.com/playlist?list=PLAvm4J_QjviQLDcy2eP1WceV2ekhU2ETm");
+        },)
+      ]),
+      FancyContainerCardListView([
         ListTile(title: Text("Kirby Matchup Chart\nTap to enlarge",textAlign: TextAlign.center, style: TextStyle(fontSize: 20),),),
         Builder(
           builder: (context) {
@@ -736,7 +743,7 @@ Due to the nature of Kirby's copy abilities and low profiling being more effecti
       //IBZ
       CreditedContributor(
         contributor: "IBZ",
-        contribution: "Playstyle Paragraph/Graph \nCommon Mistakes",
+        contribution: "Playstyle Paragraph/Graph \nCommon Mistakes \nPreferred Stages",
         plugsAndLinks: {
           "Twitter": "https://twitter.com/IBZ_SSB",
           "YouTube": "https://www.youtube.com/channel/UCQNS04WkKo6_n-4aTONyX9w"
@@ -759,6 +766,181 @@ Due to the nature of Kirby's copy abilities and low profiling being more effecti
         }
       )
     ]
+  ));
+  //Fox
+  sixFour.add(Fighter(
+    name: Text("Fox"),
+    fighterImage: Image.asset("lib/assets/sixFour/FoxImage.png"),
+    stockIconImageLocation: "lib/assets/sixFour/FoxStockIcon.png",
+    stockIconGraphOffset: Offset(0,-57),
+    barColor: Colors.brown,
+    discordLink: "https://www.smashcords.com/s5fox",
+    ultimateFrameDataLink: "https://ultimateframedata.com/fox.php",
+    tacticsTitle: "Rushdown",
+    tacticsBody: """
+Fox is a very rushdown centered character, with good combos and kill potential, but lacks in defense and is one of the lightest characters in the game
+    """,
+    additionalWidgets: [
+      FancyContainerCardListView([
+        ListTile(title: Text("Fox guide, by LarryLurr",textAlign: TextAlign.center, style: TextStyle(fontSize: 20),),),
+        IconButton(icon: Icon(Icons.launch, color: Colors.blue,),
+          onPressed: (){
+          openYoutube("www.youtube.com/watch?v=VQCDtwUJCRA");
+          },)
+      ])
+    ],
+    contributors: [
+      CreditedContributor(
+        contributor: "Larry Lurr",
+        contribution: "Fox Guide",
+        plugsAndLinks: {
+          "YouTube" : "https://www.youtube.com/channel/UCTc6QUhdAc-yU99rpDxlWrw",
+          "Twitter" : "https://twitter.com/LarryLurr",
+          "Twitch" : "https://www.twitch.tv/larrylurr"
+        }
+      )
+    ],
+  ));
+  //Pikachu
+  sixFour.add(Fighter(
+    name: Text("Pikachu"),
+    fighterImage: Image.asset("lib/assets/sixFour/PikachuImage.png"),
+    stockIconImageLocation: "lib/assets/sixFour/PikachuStockIcon.png",
+    stockIconGraphOffset: Offset(20,-10),
+    barColor: Colors.yellow,
+    discordLink: "",
+    ultimateFrameDataLink: "https://ultimateframedata.com/pikachu.php",
+    tacticsTitle: "Rushdown/Bait and Punish",
+    tacticsBody: """
+Pikachu can play either Bait and Punish or Rushdown with a heavy focus on the execution of either of these ideas and thus, has a high yet rewarding skill cap
+    """,
+    additionalWidgets: [
+      //Pikachu notes
+      FancyContainerCardListView([
+        ListTile(
+          title: Text("Pikachu notes, by Miceaelis",textAlign: TextAlign.center, style: TextStyle(fontSize: 20),),
+        ),
+        IconButton(icon: Icon(Icons.launch,color: Colors.blue,),
+        onPressed: (){
+          launch("https://docs.google.com/spreadsheets/d/1tfCCrjQ7cowGHh48KX1_sepu2R-eyS23TSM9N2tC9mA/edit?usp=sharing");
+        },)
+      ]),
+      //Art of
+      FancyContainerCardListView([
+        ListTile(
+          title: Text("Art of Pikachu, by Izaw",textAlign: TextAlign.center, style: TextStyle(fontSize: 20),),
+        ),
+        IconButton(
+          icon: Icon(Icons.launch,color: Colors.blue,),
+          onPressed: (){
+            openYoutube("youtu.be/8TEYez3_OFk");
+          },
+        )
+      ])
+    ],
+    contributors: [
+      CreditedContributor().izaw(),
+      CreditedContributor(
+        contributor: "Miceaelis",
+        contribution: "Pikachu notes Google Doc"
+      )
+    ]
+  ));
+  //Luigi
+  sixFour.add(Fighter(
+    name: Text("Luigi"),
+    fighterImage: Image.asset("lib/assets/sixFour/LuigiImage.png"),
+    stockIconImageLocation:"lib/assets/sixFour/LuigiStockIcon.png",
+    stockIconGraphOffset: Offset(50,40),
+    barColor: Colors.green,
+    discordLink: "https://discord.gg/sx7JWub",
+    ultimateFrameDataLink: "https://ultimateframedata.com/luigi.php",
+    tacticsTitle: "Grappler",
+    tacticsBody: """
+Luigi is very focused on bait and punish, he is a grappler with several 0 -> death combos he can get off of a grab, as listed and in the lab doc, the 'Art of' video goes into much more depth of what he can do exactly so be sure to watch that. 
+    """,
+    additionalWidgets: [
+      FancyContainerCardListView([
+        ListTile(
+          title: Text("Art of Luigi", textAlign: TextAlign.center, style: TextStyle(fontSize: 20),),
+        ),
+        IconButton(icon: Icon(Icons.launch, color: Colors.blue,),
+        onPressed: (){
+          openYoutube("youtu.be/E7e7fYu2pdM");
+        },)
+      ]),
+      FancyContainerCardListView([
+        ListTile(
+          title: Text("Luigi lab doc",textAlign: TextAlign.center, style: TextStyle(fontSize: 20),),
+        ),
+        IconButton(icon: Icon(Icons.launch, color: Colors.blue,),
+        onPressed: (){
+          launch("https://docs.google.com/spreadsheets/d/1G-lcvIuZpb78z6E875iUcygHpCNxxyRHhGJiNxo39T0/edit?usp=sharing");
+        },),
+      ])
+    ],
+    contributors: [
+      CreditedContributor().izaw()
+    ],
+  ));
+  //Ness
+  sixFour.add(Fighter(
+    name: Text("Ness"),
+    fighterImage: Image.asset("lib/assets/sixFour/NessImage.png"),
+    stockIconImageLocation: "lib/assets/sixFour/NessStockIcon.png",
+    stockIconGraphOffset: Offset(0,0),
+    barColor: Colors.red,
+    discordLink: "https://discord.gg/E5CgDRx",
+    ultimateFrameDataLink: "https://ultimateframedata.com/ness.php",
+    tacticsTitle: "Ness Playstyle",
+    tacticsBody: "Insert paragraph",
+    additionalWidgets: [
+      FancyContainerCardListView([
+        ListTile(title: Text("Beginner ness guide,\n by BestNess",textAlign: TextAlign.center, style: TextStyle(fontSize: 20),),),
+        IconButton(icon: Icon(Icons.launch,color: Colors.blue,),
+        onPressed: (){
+          openYoutube("youtu.be/yiqNdmC4m-g");
+        },)
+      ]),
+      FancyContainerCardListView([
+        ListTile(title: Text("Magnet heal precentages spreadsheet",textAlign: TextAlign.center,style: TextStyle(fontSize: 20),),),
+        IconButton(icon: Icon(Icons.launch,color: Colors.blue,),
+        onPressed: (){
+          launch("https://docs.google.com/spreadsheets/d/1-_0Lb6rwSEm-A34iz6XXC6oo7cieu7YmLNCajr_EfU8/edit?usp=sharing");
+        },)
+      ])
+    ],
+    contributors: [
+      CreditedContributor(
+        contributor: "BestNess",
+        contribution: "Ness Guide",
+        plugsAndLinks: {}
+      )
+    ]
+  ));
+  //Captain Falcon
+  sixFour.add(Fighter(
+    name: Text("Captain Falcon"),
+    fighterImage: Image.asset("lib/assets/sixFour/CaptainFalconImage.png"),
+    stockIconImageLocation: "lib/assets/sixFour/CaptainFalconStockImage.png",
+    stockIconGraphOffset: Offset(0,0),
+    barColor: Colors.blue,
+    discordLink: "",
+    ultimateFrameDataLink: "https://ultimateframedata.com/captain_falcon.php",
+    tacticsTitle: "Captain Falcon Playstyle",
+    tacticsBody: """
+Insert paragraph
+    """,
+    additionalWidgets: [
+      FancyContainerCardListView([
+        ListTile(title: Text("Falcon Doc",textAlign: TextAlign.center, style: TextStyle(fontSize: 20),),),
+        IconButton(icon: Icon(Icons.launch, color: Colors.blue,),
+        onPressed: (){
+          launch("https://docs.google.com/document/d/1JmqNhcyzn5SN9OmssAIK0GlWQCegE070mSo_WKfaV-g/edit?usp=sharing");
+        },)
+      ])
+    ],
+    contributors: []
   ));
   return sixFour;
 }
