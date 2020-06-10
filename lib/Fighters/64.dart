@@ -128,9 +128,10 @@ List<Fighter> sixtyFour() {
             contribution: "FAQ document",
             plugsAndLinks: {"Twitter": "https://twitter.com/bananafish_o7"}),
       ],
-      tacticsTitle: "Flex",
+      tacticsTitle: "About Mario",
       tacticsBody:
-          """Mario is one of the most flexible characters in the game, there is no one way to play Mario, play him how you want to play the game
+          """
+Mario is a flexible character perfectly suited for beginners. He has simple mechanics, but they can be optimized to perfection. Mario relies on combos using his great frame data and air speed to build up damage, and has many tools to close out stocks quickly. Mario is a great character to pick up if you're looking for flexibility, fun combos, and consistency.          
       """));
 
   //Donkey Kong
@@ -280,7 +281,7 @@ List<Fighter> sixtyFour() {
             contribution: "DK matchup chart",
             plugsAndLinks: {"Twitter": "https://twitter.com/kevinkaywho"})
       ],
-      tacticsTitle: "Grappler",
+      tacticsTitle: "About DK",
       tacticsBody:
           "DK is a bait and punish style character, he is a grappler, he has heavy emphasis on what he can get off of a grab, his cargo throw ability helps with this a lot, which can be done by pressing forward after a grab, the pDKO combo is a great example of what can be done, check the discord for more detailed information"));
 
@@ -293,7 +294,7 @@ List<Fighter> sixtyFour() {
     barColor: Colors.blue,
     discordLink: "http://discord.gg/LinkisSick",
     ultimateFrameDataLink: "https://ultimateframedata.com/link.php",
-    tacticsTitle: "Turtle",
+    tacticsTitle: "About Link",
     tacticsBody:
         "Links usually have a turtle playstyle, using their projectiles to keep distance and be defensive rather than trapping, and closing in a stock once the opportunity is presented to them. Link's remote bomb is a strong tool in his arsenal, it's useful for combos and even his recovery if you time dropping it properly.",
     contributors: [
@@ -468,7 +469,7 @@ List<Fighter> sixtyFour() {
             contribution: "Samus Logbook",
             plugsAndLinks: {"Twitter": "https://twitter.com/TLI_Shadow9"})
       ],
-      tacticsTitle: "Zoner/Bait Punish",
+      tacticsTitle: "About Samus",
       tacticsBody:
           "Samus falls somewhere in between 'Zoner' and 'Bait and Punish', although it's very matchup dependant, her strong projectiles can wall out opponents, but she also has good advantage state and combos. Combining these two together is important, see the logbook for more details.\n",
       additionalWidgets: [
@@ -522,7 +523,7 @@ List<Fighter> sixtyFour() {
     barColor: Colors.green,
     discordLink: "https://discordapp.com/invite/QKanWPU",
     ultimateFrameDataLink: "https://ultimateframedata.com/yoshi.php",
-    tacticsTitle: "Placeholder Tactics",
+    tacticsTitle: "About Yoshi",
     tacticsBody: "Placeholder Paragraph",
     contributors: [
       //Izaw
@@ -656,7 +657,7 @@ A common error is accidentally misclicking Side B upon firing Eggs. When you wan
     barColor: Colors.pink,
     discordLink: "https://discord.gg/pNdppAu",
     ultimateFrameDataLink: "https://ultimateframedata.com/kirby.php",
-    tacticsTitle: "Flexible",
+    tacticsTitle: "About Kirby",
     tacticsBody: """
 Due to the nature of Kirby's copy abilities and low profiling being more effective against some characters than others, Kirby can change and adapt his playstyle to suit different matchups. He generally prefers to play grounded and close to his opponent to abuse his great frame data on his normals. However in some matchups, often with the use of copy abilities, he can play as a zoner as well. In matchups where low profiling is very effective, Kirby will want to play rushdown and use a lot of down tilts. 
     """,
@@ -776,7 +777,7 @@ Due to the nature of Kirby's copy abilities and low profiling being more effecti
     barColor: Colors.brown,
     discordLink: "https://www.smashcords.com/s5fox",
     ultimateFrameDataLink: "https://ultimateframedata.com/fox.php",
-    tacticsTitle: "Rushdown",
+    tacticsTitle: "About Fox",
     tacticsBody: """
 Fox is a very rushdown centered character, with good combos and kill potential, but lacks in defense and is one of the lightest characters in the game
     """,
@@ -810,7 +811,7 @@ Fox is a very rushdown centered character, with good combos and kill potential, 
     barColor: Colors.yellow,
     discordLink: "",
     ultimateFrameDataLink: "https://ultimateframedata.com/pikachu.php",
-    tacticsTitle: "Rushdown/Bait and Punish",
+    tacticsTitle: "About Pikachu",
     tacticsBody: """
 Pikachu can play either Bait and Punish or Rushdown with a heavy focus on the execution of either of these ideas and thus, has a high yet rewarding skill cap
     """,
@@ -855,7 +856,7 @@ Pikachu can play either Bait and Punish or Rushdown with a heavy focus on the ex
     barColor: Colors.green,
     discordLink: "https://discord.gg/sx7JWub",
     ultimateFrameDataLink: "https://ultimateframedata.com/luigi.php",
-    tacticsTitle: "Grappler",
+    tacticsTitle: "About Luigi",
     tacticsBody: """
 Luigi is very focused on bait and punish, he is a grappler with several 0 -> death combos he can get off of a grab, as listed and in the lab doc, the 'Art of' video goes into much more depth of what he can do exactly so be sure to watch that. 
     """,
@@ -892,7 +893,7 @@ Luigi is very focused on bait and punish, he is a grappler with several 0 -> dea
     barColor: Colors.red,
     discordLink: "https://discord.gg/E5CgDRx",
     ultimateFrameDataLink: "https://ultimateframedata.com/ness.php",
-    tacticsTitle: "Ness Playstyle",
+    tacticsTitle: "About Ness",
     tacticsBody: "Insert paragraph",
     additionalWidgets: [
       FancyContainerCardListView([
@@ -927,7 +928,7 @@ Luigi is very focused on bait and punish, he is a grappler with several 0 -> dea
     barColor: Colors.blue,
     discordLink: "",
     ultimateFrameDataLink: "https://ultimateframedata.com/captain_falcon.php",
-    tacticsTitle: "Captain Falcon Playstyle",
+    tacticsTitle: "About Captain Falcon",
     tacticsBody: """
 Insert paragraph
     """,
