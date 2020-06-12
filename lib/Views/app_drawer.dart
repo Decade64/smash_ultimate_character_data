@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:smashultimatecharacterdata/Views/favorites_page.dart';
+import 'package:smashultimatecharacterdata/Views/search_view.dart';
 
 
 Widget appDrawer() {
@@ -19,6 +20,18 @@ Widget appDrawer() {
           );
         },
       ),
+        Builder(
+          builder: (context){
+            return ListTile(
+              title: Text("Fighter Search"),
+              trailing: Icon(Icons.search),
+              onTap: (){
+                Navigator.pop(context);
+                Navigator.push(context, MaterialPageRoute(builder: (context) => SearchView()));
+              },
+            );
+          },
+        ),
       Builder(
         builder: (context){
           return ListTile(
@@ -33,7 +46,7 @@ Widget appDrawer() {
             },
           );
         },
-      )
+      ),
       ],
     ),
   );

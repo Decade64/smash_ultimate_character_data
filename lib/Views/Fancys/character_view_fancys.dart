@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:smashultimatecharacterdata/Fighters/More/Favorites.dart';
 import 'package:smashultimatecharacterdata/Views/character_view.dart';
-import 'package:smashultimatecharacterdata/Views/favorites_page.dart';
 
 extension fancyAppBar on CharacterInfoView{
   Widget fancyCharacterAppBar(){
@@ -33,7 +32,6 @@ extension fancyAppBar on CharacterInfoView{
     //Arrays separated by fighter views to separate sliver Grid/List
     List<Widget> otherWidgets = fighter.allWidgets();
     otherWidgets.removeRange(0,1);
-    List<Widget> withoutTriangle = [];
     return Center(
       child: Container(
         color: fighter.barColor,

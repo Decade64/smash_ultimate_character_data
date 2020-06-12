@@ -1,5 +1,6 @@
 import 'FighterDefinition.dart';
 import '64.dart';
+import 'melee.dart';
 
 class AllFighters {
   List<Fighter> fighterData = List<Fighter>();
@@ -10,6 +11,10 @@ class AllFighters {
    List<Fighter> fighters(){
      //64
      for(Fighter fighter in sixtyFour()){
+       fighterData.add(fighter);
+     }
+     //Melee
+     for (Fighter fighter in melee()){
        fighterData.add(fighter);
      }
     return fighterData;

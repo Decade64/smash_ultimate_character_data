@@ -8,7 +8,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "SSBU Character",
+      title: "SSBU Compendium",
       home: Scaffold(
         backgroundColor: Colors.grey,
         appBar: AppBar(
