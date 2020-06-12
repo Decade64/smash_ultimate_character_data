@@ -282,8 +282,10 @@ Mario is a flexible character perfectly suited for beginners. He has simple mech
             plugsAndLinks: {"Twitter": "https://twitter.com/kevinkaywho"})
       ],
       tacticsTitle: "About DK",
-      tacticsBody:
-          "DK is a bait and punish style character, he is a grappler, he has heavy emphasis on what he can get off of a grab, his cargo throw ability helps with this a lot, which can be done by pressing forward after a grab, the pDKO combo is a great example of what can be done, check the discord for more detailed information"));
+      tacticsBody:"""
+Similar to most heavies, Donkey Kong is a bait and punish character. Unlike othe heavies, he is also a half grappler. Donkey Kong's good throw combos, cargo throw, and his powerful pDKO kill confirm make his grab one of the most deadliest in the game. Donkey Kong has great aerial moves and hitboxes which can also be used to his advantage. Donkey Kong is a very fun character suited best for players who like to grab.      
+      """
+  ));
 
   //Link
   sixFour.add(Fighter(
@@ -295,8 +297,9 @@ Mario is a flexible character perfectly suited for beginners. He has simple mech
     discordLink: "http://discord.gg/LinkisSick",
     ultimateFrameDataLink: "https://ultimateframedata.com/link.php",
     tacticsTitle: "About Link",
-    tacticsBody:
-        "Links usually have a turtle playstyle, using their projectiles to keep distance and be defensive rather than trapping, and closing in a stock once the opportunity is presented to them. Link's remote bomb is a strong tool in his arsenal, it's useful for combos and even his recovery if you time dropping it properly.",
+    tacticsBody:"""
+Link has a powerful moveset based around projectiles, but instead of zoning out the opponent, Link's goal is to play slow and defensive, and capitalize on the opponents mistakes. The remote bomb is one of Link's best defensive and offensive tools, allowing Link to completely block off part of the map with one item. It can also be used to recover in a pinch. Link's slow, methodical approach makes him an excellent character for players who enjoy keeping their distance and whittling down their opponents until it is time to strike.
+    """,
     contributors: [
       CreditedContributor().izaw(),
       CreditedContributor(
@@ -470,8 +473,9 @@ Mario is a flexible character perfectly suited for beginners. He has simple mech
             plugsAndLinks: {"Twitter": "https://twitter.com/TLI_Shadow9"})
       ],
       tacticsTitle: "About Samus",
-      tacticsBody:
-          "Samus falls somewhere in between 'Zoner' and 'Bait and Punish', although it's very matchup dependant, her strong projectiles can wall out opponents, but she also has good advantage state and combos. Combining these two together is important, see the logbook for more details.\n",
+      tacticsBody:"""
+Samus and Dark Samus are projectile based characters who are good at both zoning and bait and punish style gameplay. Samus' powerful charge shot allows for Samus to keep a very powerful attack loaded in case the opponent makes a mistake. Samus can use her arsenal of combos, projectiles, and her tether grab to remove all of her opponents options. Samus and Dark Samus are great characters for those who like projectile characters, but don't want to lack the combos that other characters have.
+      """,
       additionalWidgets: [
         //Logbook link
         FancyContainerCardListView([
@@ -524,7 +528,9 @@ Mario is a flexible character perfectly suited for beginners. He has simple mech
     discordLink: "https://discordapp.com/invite/QKanWPU",
     ultimateFrameDataLink: "https://ultimateframedata.com/yoshi.php",
     tacticsTitle: "About Yoshi",
-    tacticsBody: "Placeholder Paragraph",
+    tacticsBody: """
+Yoshi is a fighter with basic moves, but many unique attributes. He has insane combo breaking potential, especially with his armor on his double jump. He is heavy, but very floaty. His high jump height and fast air speed allow him to traverse the arena to use his powerful attacks in an instant. His forward and and up tilt are very powerful to rack up percent with. Yoshi's down tilt and neutral air are used to get tech chases, which Yoshi gets a lot of value from. Yoshi is perfect for those looking for the perfect mix of agility and defense.
+    """,
     contributors: [
       //Izaw
       CreditedContributor().izaw(),
@@ -659,7 +665,7 @@ A common error is accidentally misclicking Side B upon firing Eggs. When you wan
     ultimateFrameDataLink: "https://ultimateframedata.com/kirby.php",
     tacticsTitle: "About Kirby",
     tacticsBody: """
-Due to the nature of Kirby's copy abilities and low profiling being more effective against some characters than others, Kirby can change and adapt his playstyle to suit different matchups. He generally prefers to play grounded and close to his opponent to abuse his great frame data on his normals. However in some matchups, often with the use of copy abilities, he can play as a zoner as well. In matchups where low profiling is very effective, Kirby will want to play rushdown and use a lot of down tilts. 
+Kirby is a character who can switch his playstyle to whatever he needs to beat his opponent. Whether this means low profiling and playing rushdown or zoning his opponent out with their own projectiles along with his own up special, Kirby has an answer for your character. His low profiling and great frame data on his tilts and aerials allows for quick and oppressive attacks. Kirby is set back by his light and floaty style and his lack of air mobility. Kirby is perfect for those who are willing to adapt to their opponent and change how they play to fit their needs. 
     """,
     additionalWidgets: [
       FancyContainerCardListView([
@@ -779,7 +785,7 @@ Due to the nature of Kirby's copy abilities and low profiling being more effecti
     ultimateFrameDataLink: "https://ultimateframedata.com/fox.php",
     tacticsTitle: "About Fox",
     tacticsBody: """
-Fox is a very rushdown centered character, with good combos and kill potential, but lacks in defense and is one of the lightest characters in the game
+Fox is a lightweight character who has an emphasis on speed. His value comes from his quick movement and falling, allowing for Fox to overwhelm his opponents. He has fast and flashy combos which can rack up damage extremely quickly. His neutral air can combo in to his up smash, Fox's most powerful killing tool. Fox can use that and many other moves to round up stocks in a way that many other fighters can't. Fox is recommended for those who value precision and speed in a character.
     """,
     additionalWidgets: [
       FancyContainerCardListView([
@@ -813,7 +819,7 @@ Fox is a very rushdown centered character, with good combos and kill potential, 
     ultimateFrameDataLink: "https://ultimateframedata.com/pikachu.php",
     tacticsTitle: "About Pikachu",
     tacticsBody: """
-Pikachu can play either Bait and Punish or Rushdown with a heavy focus on the execution of either of these ideas and thus, has a high yet rewarding skill cap
+Pikachu is a lightweight character who has many amazing moves and qualities. Most of Pikachu's moveset seamlessly combos into each other, allowing for smooth gameplay. Pikachu's thunder jolt is a super powerful controlling move that forces the opponent to respond uncomfortably. Pikachu's up special is an amazing recovery move that gets him out of disadvantage easily. Pikachu is very light, but packs a punch. Pikachu is recommended for players who want a combo oriented moveset on a powerful character.
     """,
     additionalWidgets: [
       //Pikachu notes
@@ -941,6 +947,20 @@ Insert paragraph
         },)
       ])
     ],
+    contributors: []
+  ));
+  //Jigglypuff
+  sixFour.add(Fighter(
+    name: Text("Jigglypuff"),
+    fighterImage: Image.asset("lib/assets/sixFour/JigglypuffImage.png"),
+    stockIconImageLocation: "lib/assets/sixFour/JigglypuffStockImage.png",
+    stockIconGraphOffset: Offset(0,0),
+    barColor: Colors.pinkAccent,
+    discordLink: "",
+    ultimateFrameDataLink: "https://ultimateframedata.com/jigglypuff.php",
+    tacticsTitle: "",
+    tacticsBody: "",
+    additionalWidgets: [],
     contributors: []
   ));
   return sixFour;

@@ -477,4 +477,3 @@ Image stageImage(Stage stage){
     }
   }
 }
-Widget stageWidget(){}

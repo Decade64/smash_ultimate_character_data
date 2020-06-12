@@ -57,7 +57,7 @@ class _FavoritesPageState extends State<FavoritesPage>{
                          ),
                          //Function
                          onTap: (){
-                           Navigator.push(context, MaterialPageRoute(builder: (context) => CharacterInfoView(favorites[index])));
+                           Navigator.push(context, MaterialPageRoute(builder: (context) => CharacterInfoView(favorites[index].name.data)));
                          },
                        ),
                      );
