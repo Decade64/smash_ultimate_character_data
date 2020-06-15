@@ -65,6 +65,8 @@ flutter:
     - lib/assets/
     - lib/assets/sixFour/
     - lib/assets/melee/
+    - lib/assets/brawl/
+    - lib/assets/smashFour/
     - lib/assets/stageImages/
 
   # An image asset can refer to one or more resolution-specific "variants", see
