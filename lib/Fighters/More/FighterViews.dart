@@ -14,9 +14,14 @@ extension fighterVeiws on Fighter {
     List<String> linkNames;
     links = [discordLink, ultimateFrameDataLink, 0];
     linkNames = ["Fighter Discord", "Fighter Frame Data", "Credits"];
+    //Check if discord and frame data are present
     if (discordLink == ""){
       links.remove(discordLink);
       linkNames.remove("Fighter Discord");
+    }
+    if(ultimateFrameDataLink == ""){
+      links.remove(ultimateFrameDataLink);
+      linkNames.remove("Fighter Frame Data");
     }
     return ListView.builder(
         physics: NeverScrollableScrollPhysics(),

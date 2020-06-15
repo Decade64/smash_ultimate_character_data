@@ -932,7 +932,7 @@ Luigi is very focused on bait and punish, he is a grappler with several 0 -> dea
     stockIconImageLocation: "lib/assets/sixFour/CaptainFalconStockImage.png",
     stockIconGraphOffset: Offset(0,0),
     barColor: Colors.blue,
-    discordLink: "",
+    discordLink: "https://discord.gg/0XG2K9WbH8VAFd8p",
     ultimateFrameDataLink: "https://ultimateframedata.com/captain_falcon.php",
     tacticsTitle: "About Captain Falcon",
     tacticsBody: """
