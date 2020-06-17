@@ -9,7 +9,7 @@ List<Fighter> brawl(){
   brawl.add(Fighter(
     name: Text("Meta Knight"),
     fighterImage: Image.asset("lib/assets/brawl/MetaKnightImage.png"),
-    stockIconImageLocation: "assets/brawl/MetaKnightStockIcon.png",
+    stockIconImageLocation: "lib/assets/brawl/MetaKnightStockIcon.png",
     stockIconGraphOffset: Offset(0,0),
     barColor: Colors.blue,
     discordLink: "",
@@ -151,7 +151,7 @@ List<Fighter> brawl(){
     fighterImage: Image.asset("lib/assets/brawl/KingDededeImage.png"),
     stockIconImageLocation: "lib/assets/brawl/KingDededeStockIcon.png",
     stockIconGraphOffset: Offset(0,0),
-    barColor: Colors.blue,
+    barColor: Colors.orange,
     discordLink: "",
     ultimateFrameDataLink: "https://ultimateframedata.com/king_dedede.php",
     tacticsTitle: "",
@@ -189,7 +189,7 @@ List<Fighter> brawl(){
   ));
   //ROB
   brawl.add(Fighter(
-    name: Text("R.O.B"),
+    name: Text("ROB"),
     fighterImage: Image.asset("lib/assets/brawl/ROBImage.png"),
     stockIconImageLocation: "lib/assets/brawl/ROBStockIcon.png",
     stockIconGraphOffset: Offset(0,0),
@@ -228,4 +228,5 @@ List<Fighter> brawl(){
     additionalWidgets: [],
     contributors: [],
   ));
+  return brawl;
 }

@@ -2,7 +2,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'FighterDefinition.dart';
-import 'More/CreditedContributor.dart';
 
 List<Fighter> melee() {
   List<Fighter> melee;
@@ -56,7 +55,7 @@ List<Fighter> melee() {
       fighterImage: Image.asset("lib/assets/melee/ZeldaImage.png"),
       stockIconImageLocation: "lib/assets/melee/ZeldaStockIcon.png",
       stockIconGraphOffset: Offset(0,0),
-      barColor: Colors.grey,
+      barColor: Colors.white70,
       discordLink: "",
       ultimateFrameDataLink: "https://ultimateframedata.com/zelda.php",
       tacticsTitle: "",
@@ -70,7 +69,7 @@ List<Fighter> melee() {
       fighterImage: Image.asset("lib/assets/melee/SheikImage.png"),
       stockIconImageLocation: "lib/assets/melee/SheikStockIcon.png",
       stockIconGraphOffset: Offset(0,0),
-      barColor: Colors.deepPurple,
+      barColor: Colors.indigo,
       discordLink: "",
       ultimateFrameDataLink: "https://ultimateframedata.com/zelda.php",
       tacticsTitle: "",
@@ -84,7 +83,7 @@ List<Fighter> melee() {
       fighterImage: Image.asset("lib/assets/melee/DrMarioImage.png"),
       stockIconImageLocation: "lib/assets/melee/DrMarioStockIcon.png",
       stockIconGraphOffset: Offset(0,0),
-      barColor: Colors.grey,
+      barColor: Colors.white70,
       discordLink: "",
       ultimateFrameDataLink: "https://ultimateframedata.com/dr_mario.php",
       tacticsTitle: "",
@@ -210,7 +209,7 @@ List<Fighter> melee() {
       fighterImage: Image.asset("lib/assets/melee/ChromImage.png"),
       stockIconImageLocation: "lib/assets/melee/ChromStockIcon.png",
       stockIconGraphOffset: Offset(0,0),
-      barColor: Colors.red,
+      barColor: Colors.indigoAccent,
       discordLink: "",
       ultimateFrameDataLink: "https://ultimateframedata.com/chrom.php",
       tacticsTitle: "",
