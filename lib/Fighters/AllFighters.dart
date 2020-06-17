@@ -1,6 +1,9 @@
 import 'FighterDefinition.dart';
 import '64.dart';
 import 'melee.dart';
+import 'brawl.dart';
+import 'smash4.dart';
+import 'ultiamte.dart';
 
 class AllFighters {
   List<Fighter> fighterData = List<Fighter>();
@@ -15,6 +18,15 @@ class AllFighters {
      }
      //Melee
      for (Fighter fighter in melee()){
+       fighterData.add(fighter);
+     }
+     for (Fighter fighter in brawl()){
+       fighterData.add(fighter);
+     }
+     for (Fighter fighter in smashFour()){
+       fighterData.add(fighter);
+     }
+     for(Fighter fighter in ultimate()){
        fighterData.add(fighter);
      }
     return fighterData;

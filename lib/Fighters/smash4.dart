@@ -203,7 +203,7 @@ List<Fighter> smashFour(){
   ));
   //Duck Hunt
   smashFour.add(Fighter(
-      name: Text("Bowser Jr"),
+      name: Text("Duck Hunt"),
       fighterImage: Image.asset("lib/assets/smashFour/DuckHuntImage.png"),
       stockIconImageLocation: "lib/assets/smashFour/DuckHuntStockIcon.png",
       stockIconGraphOffset: Offset(0,0),
@@ -271,4 +271,5 @@ List<Fighter> smashFour(){
       additionalWidgets: [],
       contributors: []
   ));
+  return smashFour;
 }
