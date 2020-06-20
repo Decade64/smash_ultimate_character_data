@@ -1,7 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:smashultimatecharacterdata/Fighters/More/CreditedContributor.dart';
 import 'FighterDefinition.dart';
+import 'More/FighterViews.dart';
 
 List<Fighter> ultimate(){
   List<Fighter> ultimate = [];
@@ -16,8 +18,12 @@ List<Fighter> ultimate(){
     ultimateFrameDataLink: "https://ultimateframedata.com/inkling.php",
     tacticsTitle: "",
     tacticsBody: "",
-    additionalWidgets: [],
-    contributors: []
+    additionalWidgets: [
+      youtubeLinkCard("Art of Inkling", "youtu.be/rZjPU3FtRQU")
+    ],
+    contributors: [
+      CreditedContributor().izaw()
+    ]
   ));
   //Ridley
   ultimate.add(Fighter(
@@ -89,19 +95,31 @@ List<Fighter> ultimate(){
       additionalWidgets: [],
       contributors: []
   ));
-  //Pirhana Plant
+  //Piranha Plant
   ultimate.add(Fighter(
-      name: Text("Pirhana Plant"),
+      name: Text("Piranha Plant"),
       fighterImage: Image.asset("lib/assets/ultimate/PiranhaPlantImage.png"),
       stockIconImageLocation: "lib/assets/ultimate/PirhanaPlantStockIcon.png",
       stockIconGraphOffset: Offset(0,0),
       barColor: Colors.green,
-      discordLink: "",
+      discordLink: "https://discord.com/invite/HfsFQ8j",
       ultimateFrameDataLink: "https://ultimateframedata.com/incineroar.php",
       tacticsTitle: "",
       tacticsBody: "",
-      additionalWidgets: [],
-      contributors: []
+      additionalWidgets: [
+        youtubeLinkCard("Art of Plant", "youtu.be/AS9niTSzi6g"),
+        linkCard("Plant Moveset VS other things", "https://docs.google.com/spreadsheets/d/1yjDBqeHJC-NSuNQB1SdRR3Gj_igFplKCyz-CMPJURhg/edit?usp=sharing"),
+      ],
+      contributors: [
+        CreditedContributor().izaw(),
+        CreditedContributor(
+          contributor: "EyeDonutz",
+          contribution: "Plant Move Doc",
+          plugsAndLinks: {
+            "Twitter" : "https://twitter.com/theEyeDonutz"
+          }
+        )
+      ]
   ));
   //Joker
   ultimate.add(Fighter(

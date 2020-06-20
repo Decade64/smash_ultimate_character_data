@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:smashultimatecharacterdata/Fighters/More/CreditedContributor.dart';
+import 'package:smashultimatecharacterdata/Fighters/More/FighterViews.dart';
 import 'FighterDefinition.dart';
 
 List<Fighter> brawl(){
@@ -86,8 +88,12 @@ List<Fighter> brawl(){
     ultimateFrameDataLink: "https://ultimateframedata.com/ike.php",
     tacticsTitle: "",
     tacticsBody: "",
-    additionalWidgets: [],
-    contributors: [],
+    additionalWidgets: [
+      youtubeLinkCard("Art of Ike", "youtu.be/c_p-aiD1gTw")
+    ],
+    contributors: [
+      CreditedContributor().izaw()
+    ],
   ));
   //Pokemon Trainer
   brawl.add(Fighter(
@@ -212,8 +218,12 @@ List<Fighter> brawl(){
     ultimateFrameDataLink: "https://ultimateframedata.com/toon_link.php",
     tacticsTitle: "",
     tacticsBody: "",
-    additionalWidgets: [],
-    contributors: [],
+    additionalWidgets: [
+      youtubeLinkCard("Art of Toon Link", "youtu.be/YDYO5vVrsk8")
+    ],
+    contributors: [
+      CreditedContributor().izaw()
+    ],
   ));
   brawl.add(Fighter(
     name: Text("Wolf"),
@@ -225,8 +235,12 @@ List<Fighter> brawl(){
     ultimateFrameDataLink: "https://ultimateframedata.com/wolf.php",
     tacticsTitle: "",
     tacticsBody: "",
-    additionalWidgets: [],
-    contributors: [],
+    additionalWidgets: [
+      youtubeLinkCard("Art of Wolf", "youtu.be/Km7MSZU4gTg")
+    ],
+    contributors: [
+      CreditedContributor().izaw()
+    ],
   ));
   return brawl;
 }

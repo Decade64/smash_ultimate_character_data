@@ -19,18 +19,7 @@ List<Fighter> sixtyFour() {
       stockIconImageLocation: 'lib/assets/mario_stock.png',
       additionalWidgets: [
         //Art of
-        FancyContainerCardListView([
-          ListTile(
-            title: Text("Art of Mario", textAlign: TextAlign.center, style: TextStyle(fontSize: 20),),
-          ),
-          ListTile(
-            title: Text("Credits to Izaw", textAlign: TextAlign.center,),
-          ),
-          IconButton(icon: Icon(Icons.launch, color: Colors.blue,),
-          onPressed: (){
-            launch("https://youtu.be/vKBM9B8CEBw");
-          },)
-        ]),
+        youtubeLinkCard("Art of Mario", "youtu.be/vKBM9B8CEBw"),
         //Combos
         Container(
           child: Padding(
@@ -355,42 +344,7 @@ Link has a powerful moveset based around projectiles, but instead of zoning out 
         ),
       ),
       //Art of
-      Container(
-        child: Center(
-          child: Card(
-            elevation: 15,
-            margin: EdgeInsets.all(15),
-            child: ListView(
-              physics: NeverScrollableScrollPhysics(),
-              shrinkWrap: true,
-              children: [
-                ListTile(
-                  title: Text(
-                    "Art of Link",
-                    textAlign: TextAlign.center,
-                    style: TextStyle(fontSize: 20),
-                  ),
-                ),
-                ListTile(
-                  title: Text(
-                    "Credits to Izaw",
-                    textAlign: TextAlign.center,
-                  ),
-                ),
-                IconButton(
-                  icon: Icon(
-                    Icons.launch,
-                    color: Colors.blue,
-                  ),
-                  onPressed: () {
-                    openYoutube("www.youtube.com/watch?v=VlKkv5HSYVA");
-                  },
-                ),
-              ],
-            ),
-          ),
-        ),
-      ),
+      youtubeLinkCard("Art of Link", "youtu.be/VlKkv5HSYVA"),
       //How to use the remote bomb
       Container(
         child: Center(
@@ -478,31 +432,7 @@ Samus and Dark Samus are projectile based characters who are good at both zoning
       """,
       additionalWidgets: [
         //Logbook link
-        FancyContainerCardListView([
-          ListTile(
-            title: Text(
-              "Logbook, made by Shadow9",
-              textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 20),
-            ),
-          ),
-          ListTile(
-            title: Text(
-              "Link below",
-              textAlign: TextAlign.center,
-            ),
-          ),
-          IconButton(
-            icon: Icon(
-              Icons.launch,
-              color: Colors.blue,
-            ),
-            onPressed: () {
-              launch(
-                  "https://docs.google.com/document/d/13Rf6yTapEkDLbgZ_ymRWE7086HD7W6TaVUliGlYCPJs/edit?usp=sharing");
-            },
-          )
-        ]),
+        linkCard("Samus Logbook", "https://docs.google.com/document/d/13Rf6yTapEkDLbgZ_ymRWE7086HD7W6TaVUliGlYCPJs/edit?usp=sharing"),
         FancyContainerCardListView([
           ListTile(
             title: Text(
@@ -545,27 +475,7 @@ Yoshi is a fighter with basic moves, but many unique attributes. He has insane c
     ],
     additionalWidgets: [
       //Art of Yoshi
-      FancyContainerCardListView([
-        ListTile(
-          title: Text(
-            "Art of Yoshi",
-            textAlign: TextAlign.center,
-            style: TextStyle(fontSize: 20),
-          ),
-        ),
-        ListTile(
-          title: Text("Credits to Izaw",textAlign: TextAlign.center,),
-        ),
-        Builder(
-            builder: (context){
-              return IconButton(
-                icon: Icon(Icons.launch, color: Colors.blue,),
-                onPressed: (){
-                  openYoutube("youtu.be/zbel6sAHzDM");
-                },
-              );
-            })
-      ]),
+      youtubeLinkCard("Art of Yoshi", "youtu.be/zbel6sAHzDM"),
       //Common mistakes
       FancyContainerCardListView([
         ListTile(
@@ -668,38 +578,7 @@ A common error is accidentally misclicking Side B upon firing Eggs. When you wan
 Kirby is a character who can switch his playstyle to whatever he needs to beat his opponent. Whether this means low profiling and playing rushdown or zoning his opponent out with their own projectiles along with his own up special, Kirby has an answer for your character. His low profiling and great frame data on his tilts and aerials allows for quick and oppressive attacks. Kirby is set back by his light and floaty style and his lack of air mobility. Kirby is perfect for those who are willing to adapt to their opponent and change how they play to fit their needs. 
     """,
     additionalWidgets: [
-      FancyContainerCardListView([
-        ListTile(title: Text("Stages",textAlign: TextAlign.center,style: TextStyle(fontSize: 20),),),
-        Builder(
-          builder: (context){
-            return IconButton(icon: Icon(Icons.launch,color: Colors.blue,),
-            onPressed: (){
-              List<StagePreference> stages = [
-                StagePreference(Stage.bf, StageGoodOrBad.bad,"","" ),
-                StagePreference(Stage.ys, StageGoodOrBad.bad, "","" ),
-                StagePreference(Stage.fd, StageGoodOrBad.good, "","" ),
-                StagePreference(Stage.sv, StageGoodOrBad.good, "","" ),
-                StagePreference(Stage.ps2, StageGoodOrBad.neutral, "","" ),
-              ];
-              Navigator.push(context, MaterialPageRoute(builder: (context) => stagesInfoView(Colors.pink, stages)));
-            },);
-          },
-        )
-      ]),
-      FancyContainerCardListView([
-        ListTile(title: Text("Kirby guide, by Skillody", textAlign: TextAlign.center, style: TextStyle(fontSize: 20),),),
-        IconButton(icon: Icon(Icons.launch,color: Colors.blue,),
-        onPressed: (){
-          openYoutube("youtu.be/vf0TEtwAhwQ");
-        },)
-      ]),
-      FancyContainerCardListView([
-        ListTile(title: Text("Kirby Guide playlist",textAlign: TextAlign.center, style: TextStyle(fontSize: 20),),),
-        IconButton(icon: Icon(Icons.launch, color: Colors.blue,),
-        onPressed: (){
-          openYoutube("www.youtube.com/playlist?list=PLAvm4J_QjviQLDcy2eP1WceV2ekhU2ETm");
-        },)
-      ]),
+      youtubeLinkCard("Kirby guide\nBy Skillody", "youtu.be/vf0TEtwAhwQ"),
       FancyContainerCardListView([
         ListTile(title: Text("Kirby Matchup Chart\nTap to enlarge",textAlign: TextAlign.center, style: TextStyle(fontSize: 20),),),
         Builder(
@@ -788,13 +667,7 @@ Kirby is a character who can switch his playstyle to whatever he needs to beat h
 Fox is a lightweight character who has an emphasis on speed. His value comes from his quick movement and falling, allowing for Fox to overwhelm his opponents. He has fast and flashy combos which can rack up damage extremely quickly. His neutral air can combo in to his up smash, Fox's most powerful killing tool. Fox can use that and many other moves to round up stocks in a way that many other fighters can't. Fox is recommended for those who value precision and speed in a character.
     """,
     additionalWidgets: [
-      FancyContainerCardListView([
-        ListTile(title: Text("Fox guide, by LarryLurr",textAlign: TextAlign.center, style: TextStyle(fontSize: 20),),),
-        IconButton(icon: Icon(Icons.launch, color: Colors.blue,),
-          onPressed: (){
-          openYoutube("www.youtube.com/watch?v=VQCDtwUJCRA");
-          },)
-      ])
+      youtubeLinkCard("Fox guide\nBy Larry Lurr", "www.youtube.com/watch?v=VQCDtwUJCRA")
     ],
     contributors: [
       CreditedContributor(
@@ -823,27 +696,9 @@ Pikachu is a lightweight character who has many amazing moves and qualities. Mos
     """,
     additionalWidgets: [
       //Pikachu notes
-      FancyContainerCardListView([
-        ListTile(
-          title: Text("Pikachu notes, by Miceaelis",textAlign: TextAlign.center, style: TextStyle(fontSize: 20),),
-        ),
-        IconButton(icon: Icon(Icons.launch,color: Colors.blue,),
-        onPressed: (){
-          launch("https://docs.google.com/spreadsheets/d/1tfCCrjQ7cowGHh48KX1_sepu2R-eyS23TSM9N2tC9mA/edit?usp=sharing");
-        },)
-      ]),
+      linkCard("Pikachu notes doc\nBy Miceaelis", "https://docs.google.com/spreadsheets/d/1tfCCrjQ7cowGHh48KX1_sepu2R-eyS23TSM9N2tC9mA/edit?usp=sharing"),
       //Art of
-      FancyContainerCardListView([
-        ListTile(
-          title: Text("Art of Pikachu, by Izaw",textAlign: TextAlign.center, style: TextStyle(fontSize: 20),),
-        ),
-        IconButton(
-          icon: Icon(Icons.launch,color: Colors.blue,),
-          onPressed: (){
-            openYoutube("youtu.be/8TEYez3_OFk");
-          },
-        )
-      ])
+      youtubeLinkCard("Art of Pikachu", "youtu.be/8TEYez3_OFk")
     ],
     contributors: [
       CreditedContributor().izaw(),
@@ -864,27 +719,11 @@ Pikachu is a lightweight character who has many amazing moves and qualities. Mos
     ultimateFrameDataLink: "https://ultimateframedata.com/luigi.php",
     tacticsTitle: "About Luigi",
     tacticsBody: """
-Luigi is very focused on bait and punish, he is a grappler with several 0 -> death combos he can get off of a grab, as listed and in the lab doc, the 'Art of' video goes into much more depth of what he can do exactly so be sure to watch that. 
+Luigi is a bait and punish character, utilizing his grab really often. He is a true grappler. He has an infamous zero-to-death combo using his down throw. Luigi's playstyle is defined by his many combos, mostly stemming from his grab. Luigi's back throw can kill, so there's not much Luigi can't do with his grab. Luigi is perfect for those who like grappler-type characters and love to combo.
     """,
     additionalWidgets: [
-      FancyContainerCardListView([
-        ListTile(
-          title: Text("Art of Luigi", textAlign: TextAlign.center, style: TextStyle(fontSize: 20),),
-        ),
-        IconButton(icon: Icon(Icons.launch, color: Colors.blue,),
-        onPressed: (){
-          openYoutube("youtu.be/E7e7fYu2pdM");
-        },)
-      ]),
-      FancyContainerCardListView([
-        ListTile(
-          title: Text("Luigi lab doc",textAlign: TextAlign.center, style: TextStyle(fontSize: 20),),
-        ),
-        IconButton(icon: Icon(Icons.launch, color: Colors.blue,),
-        onPressed: (){
-          launch("https://docs.google.com/spreadsheets/d/1G-lcvIuZpb78z6E875iUcygHpCNxxyRHhGJiNxo39T0/edit?usp=sharing");
-        },),
-      ])
+      youtubeLinkCard("Art of Luigi", "youtu.be/E7e7fYu2pdM"),
+      linkCard("Luigi lab doc", "https://docs.google.com/spreadsheets/d/1G-lcvIuZpb78z6E875iUcygHpCNxxyRHhGJiNxo39T0/edit?usp=sharing")
     ],
     contributors: [
       CreditedContributor().izaw()
@@ -895,27 +734,19 @@ Luigi is very focused on bait and punish, he is a grappler with several 0 -> dea
     name: Text("Ness"),
     fighterImage: Image.asset("lib/assets/sixFour/NessImage.png"),
     stockIconImageLocation: "lib/assets/sixFour/NessStockIcon.png",
-    stockIconGraphOffset: Offset(0,0),
+    stockIconGraphOffset: Offset(-17,-22),
     barColor: Colors.red,
     discordLink: "https://discord.gg/E5CgDRx",
     ultimateFrameDataLink: "https://ultimateframedata.com/ness.php",
     tacticsTitle: "About Ness",
-    tacticsBody: "Insert paragraph",
+    tacticsBody: """
+At high level play, Ness is great at both creating distance and placing opponents in disadvantage, then using his great movement options to close in with a combo or strong kill option based on whatever is appropriate for the situation. For example, using PK fire in neutral and PSI magnet on approach. This concept and their parts work well together, but are just as powerful by themselves for Ness depending on the situation at hand.    
+    """,
     additionalWidgets: [
-      FancyContainerCardListView([
-        ListTile(title: Text("Beginner ness guide,\n by BestNess",textAlign: TextAlign.center, style: TextStyle(fontSize: 20),),),
-        IconButton(icon: Icon(Icons.launch,color: Colors.blue,),
-        onPressed: (){
-          openYoutube("youtu.be/yiqNdmC4m-g");
-        },)
-      ]),
-      FancyContainerCardListView([
-        ListTile(title: Text("Magnet heal precentages spreadsheet",textAlign: TextAlign.center,style: TextStyle(fontSize: 20),),),
-        IconButton(icon: Icon(Icons.launch,color: Colors.blue,),
-        onPressed: (){
-          launch("https://docs.google.com/spreadsheets/d/1-_0Lb6rwSEm-A34iz6XXC6oo7cieu7YmLNCajr_EfU8/edit?usp=sharing");
-        },)
-      ])
+      //Ness guide
+      youtubeLinkCard("2020 Ness guide,\nBy BestNess", "youtu.be/NEXnAsOfQ7g"),
+      //Magnet heal spreadsheet
+      linkCard("Magnet heal precentages spreadsheet", "https://docs.google.com/spreadsheets/d/1-_0Lb6rwSEm-A34iz6XXC6oo7cieu7YmLNCajr_EfU8/edit?usp=sharing")
     ],
     contributors: [
       CreditedContributor(
@@ -939,13 +770,7 @@ Luigi is very focused on bait and punish, he is a grappler with several 0 -> dea
 Insert paragraph
     """,
     additionalWidgets: [
-      FancyContainerCardListView([
-        ListTile(title: Text("Falcon Doc",textAlign: TextAlign.center, style: TextStyle(fontSize: 20),),),
-        IconButton(icon: Icon(Icons.launch, color: Colors.blue,),
-        onPressed: (){
-          launch("https://docs.google.com/document/d/1JmqNhcyzn5SN9OmssAIK0GlWQCegE070mSo_WKfaV-g/edit?usp=sharing");
-        },)
-      ])
+      linkCard("Falcon Doc", "https://docs.google.com/document/d/1JmqNhcyzn5SN9OmssAIK0GlWQCegE070mSo_WKfaV-g/edit?usp=sharing")
     ],
     contributors: []
   ));
