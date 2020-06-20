@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:smashultimatecharacterdata/Fighters/More/CreditedContributor.dart';
+import 'package:smashultimatecharacterdata/Fighters/More/FighterViews.dart';
 import 'FighterDefinition.dart';
 
 List<Fighter> melee() {
@@ -14,7 +16,7 @@ List<Fighter> melee() {
     stockIconImageLocation: "lib/assets/melee/PeachStockImage.png",
     stockIconGraphOffset: Offset(0,0),
     barColor: Colors.pinkAccent,
-    discordLink: "",
+    discordLink: "https://smashcords.com/s5peach",
     ultimateFrameDataLink: "https://ultimateframedata.com/peach.php",
     tacticsTitle: "",
     tacticsBody: "",
@@ -42,7 +44,7 @@ List<Fighter> melee() {
       stockIconImageLocation: "lib/assets/melee/IceClimbersStockIcon.png",
       stockIconGraphOffset: Offset(0,0),
       barColor: Colors.blue,
-      discordLink: "",
+      discordLink: "https://discord.com/invite/6ha6HVF",
       ultimateFrameDataLink: "https://ultimateframedata.com/ice_climbers.php",
       tacticsTitle: "",
       tacticsBody: "",
@@ -70,7 +72,7 @@ List<Fighter> melee() {
       stockIconImageLocation: "lib/assets/melee/SheikStockIcon.png",
       stockIconGraphOffset: Offset(0,0),
       barColor: Colors.indigo,
-      discordLink: "",
+      discordLink: "https://discord.com/invite/MSbMHrY",
       ultimateFrameDataLink: "https://ultimateframedata.com/zelda.php",
       tacticsTitle: "",
       tacticsBody: "",
@@ -130,8 +132,12 @@ List<Fighter> melee() {
       ultimateFrameDataLink: "https://ultimateframedata.com/marth.php",
       tacticsTitle: "",
       tacticsBody: "",
-      additionalWidgets: [],
-      contributors: []
+      additionalWidgets: [
+        youtubeLinkCard("Art of Marth", "youtu.be/WBTHnHqh3qk")
+      ],
+      contributors: [
+        CreditedContributor().izaw()
+      ]
   ));
   //Lucina
   melee.add(Fighter(
@@ -144,8 +150,12 @@ List<Fighter> melee() {
       ultimateFrameDataLink: "https://ultimateframedata.com/lucina.php",
       tacticsTitle: "",
       tacticsBody: "",
-      additionalWidgets: [],
-      contributors: []
+      additionalWidgets: [
+        youtubeLinkCard("Art of Lucina", "youtu.be/WBTHnHqh3qk")
+      ],
+      contributors: [
+        CreditedContributor().izaw()
+      ]
   ));
   //Young Link
   melee.add(Fighter(
@@ -158,8 +168,12 @@ List<Fighter> melee() {
       ultimateFrameDataLink: "https://ultimateframedata.com/young_link.php",
       tacticsTitle: "",
       tacticsBody: "",
-      additionalWidgets: [],
-      contributors: []
+      additionalWidgets: [
+        youtubeLinkCard("Art of Young Link", "youtu.be/WSep92_Z4CU")
+      ],
+      contributors: [
+        CreditedContributor().izaw()
+      ]
   ));
   //Gannon
   melee.add(Fighter(
@@ -200,8 +214,12 @@ List<Fighter> melee() {
       ultimateFrameDataLink: "https://ultimateframedata.com/roy.php",
       tacticsTitle: "",
       tacticsBody: "",
-      additionalWidgets: [],
-      contributors: []
+      additionalWidgets: [
+        youtubeLinkCard("Art of Roy", "youtu.be/Km7MSZU4gTg")
+      ],
+      contributors: [
+        CreditedContributor().izaw()
+      ]
   ));
   //Chrom
   melee.add(Fighter(
@@ -214,8 +232,12 @@ List<Fighter> melee() {
       ultimateFrameDataLink: "https://ultimateframedata.com/chrom.php",
       tacticsTitle: "",
       tacticsBody: "",
-      additionalWidgets: [],
-      contributors: []
+      additionalWidgets: [
+        youtubeLinkCard("Art of Chrom", "youtu.be/fn0v1UUpI18")
+      ],
+      contributors: [
+        CreditedContributor().izaw()
+      ]
   ));
   //Game and watch
   melee.add(Fighter(

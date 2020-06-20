@@ -380,6 +380,35 @@ Widget FancyContainerCardListView(List<Widget> children){
     ),
   );
 }
+//Link View
+Widget linkCard(String title, String url){
+  return FancyContainerCardListView([
+    ListTile(
+      title: Text(title, textAlign: TextAlign.center, style: TextStyle(fontSize: 20),),
+      contentPadding: EdgeInsets.only(top: 15),
+    ),
+    IconButton(
+      icon: Icon(Icons.launch),
+      onPressed: (){
+        launch(url);
+      },
+    )
+  ]);
+}
+Widget youtubeLinkCard(String title, String url){
+  return FancyContainerCardListView([
+    ListTile(
+      title: Text(title, textAlign: TextAlign.center, style: TextStyle(fontSize: 20),),
+      contentPadding: EdgeInsets.only(top:15),
+    ),
+    IconButton(
+      icon: Icon(Icons.launch,color: Colors.blue,),
+      onPressed: (){
+        openYoutube(url);
+      },
+    )
+  ]);
+}
 
 //Stage things
 class StagePreference{
