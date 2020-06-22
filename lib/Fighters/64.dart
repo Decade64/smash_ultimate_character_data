@@ -688,7 +688,7 @@ Fox is a lightweight character who has an emphasis on speed. His value comes fro
     stockIconImageLocation: "lib/assets/sixFour/PikachuStockIcon.png",
     stockIconGraphOffset: Offset(20,-10),
     barColor: Colors.yellow,
-    discordLink: "",
+    discordLink: "https://discord.com/invite/UprygGD",
     ultimateFrameDataLink: "https://ultimateframedata.com/pikachu.php",
     tacticsTitle: "About Pikachu",
     tacticsBody: """
@@ -781,7 +781,7 @@ Insert paragraph
     stockIconImageLocation: "lib/assets/sixFour/JigglypuffStockImage.png",
     stockIconGraphOffset: Offset(0,0),
     barColor: Colors.pinkAccent,
-    discordLink: "",
+    discordLink: "https://discord.com/invite/0Wj6QkUoh01KUVPn",
     ultimateFrameDataLink: "https://ultimateframedata.com/jigglypuff.php",
     tacticsTitle: "",
     tacticsBody: "",
