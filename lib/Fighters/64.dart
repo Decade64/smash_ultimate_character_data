@@ -740,7 +740,7 @@ Luigi is a bait and punish character, utilizing his grab really often. He is a t
     ultimateFrameDataLink: "https://ultimateframedata.com/ness.php",
     tacticsTitle: "About Ness",
     tacticsBody: """
-At high level play, Ness is great at both creating distance and placing opponents in disadvantage, then using his great movement options to close in with a combo or strong kill option based on whatever is appropriate for the situation. For example, using PK fire in neutral and PSI magnet on approach. This concept and their parts work well together, but are just as powerful by themselves for Ness depending on the situation at hand.    
+With a low skill floor and a high skill ceiling, Ness plays well at many skill levels. At lower levels of play or online, spamming PK fire without purpose or intent is common but difficult to adjust to if you don’t know what the fighter you are playing as can do about it. At high level play, Ness is great at both creating distance and placing opponents in disadvantage, then using his great movement options to close in with a combo or strong kill option based on whatever is appropriate for the situation. For example, using PK fire in neutral and PSI magnet on approach. This concept and their parts work well together, but are just as powerful by themselves for Ness depending on the situation at hand.    
     """,
     additionalWidgets: [
       //Ness guide
@@ -761,13 +761,13 @@ At high level play, Ness is great at both creating distance and placing opponent
     name: Text("Captain Falcon"),
     fighterImage: Image.asset("lib/assets/sixFour/CaptainFalconImage.png"),
     stockIconImageLocation: "lib/assets/sixFour/CaptainFalconStockImage.png",
-    stockIconGraphOffset: Offset(0,0),
+    stockIconGraphOffset: Offset(17,-15),
     barColor: Colors.indigo,
     discordLink: "https://discord.gg/0XG2K9WbH8VAFd8p",
     ultimateFrameDataLink: "https://ultimateframedata.com/captain_falcon.php",
     tacticsTitle: "About Captain Falcon",
     tacticsBody: """
-Insert paragraph
+Captain Falcon is heavily dependent on his solid movement, especially in the neutral. The first hit of n-air combos into a lot, and knee (f-air) is still a very strong kill option but very difficult to use in a real match, as it is a matter of connecting the early hit which is only active for one frame.
     """,
     additionalWidgets: [
       linkCard("Falcon Doc", "https://docs.google.com/document/d/1JmqNhcyzn5SN9OmssAIK0GlWQCegE070mSo_WKfaV-g/edit?usp=sharing")
@@ -779,12 +779,14 @@ Insert paragraph
     name: Text("Jigglypuff"),
     fighterImage: Image.asset("lib/assets/sixFour/JigglypuffImage.png"),
     stockIconImageLocation: "lib/assets/sixFour/JigglypuffStockImage.png",
-    stockIconGraphOffset: Offset(0,0),
+    stockIconGraphOffset: Offset(65,50),
     barColor: Colors.pinkAccent,
     discordLink: "https://discord.com/invite/0Wj6QkUoh01KUVPn",
     ultimateFrameDataLink: "https://ultimateframedata.com/jigglypuff.php",
-    tacticsTitle: "",
-    tacticsBody: "",
+    tacticsTitle: "About Jigglypuff",
+    tacticsBody: """
+With strong areals f-air and b-air being her best moves, and having a total of five jumps in the air that cover a fair amount of distance in comparison to other characters with the same amount of jumps, Jigglypuff has a lot of strength in the air both on and off stage. Rest is the most high risk high reward move in the game, killing at relatively low percentages but very hard to connect, and leaving her in sleep for roughly three seconds. She does not have the range to zone opponents, and at the same time does not have the attributes or tools needed to rush down opponents either, instead she relies heavily on punishing the wiffs of her opponent placing her in the bait/punish category, without being a grappler.
+      """,
     additionalWidgets: [],
     contributors: []
   ));
