@@ -388,7 +388,7 @@ Widget linkCard(String title, String url){
       contentPadding: EdgeInsets.only(top: 15),
     ),
     IconButton(
-      icon: Icon(Icons.launch),
+      icon: Icon(Icons.launch, color: Colors.blue,),
       onPressed: (){
         launch(url);
       },
